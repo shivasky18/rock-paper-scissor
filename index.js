@@ -33,8 +33,8 @@ btn.addEventListener("click",()=>{
             btn.innerHTML="YOU LOST ,BETTER LUCK NEXT TIME !"
             alert(`You Lost .Computer chosen ${ComChoice}`)
         }
-        document.querySelector(".selected").classList.remove("selected")
     }
+    document.querySelector(".selected").classList.remove("selected")
 
 })
 function imgClicked() {
