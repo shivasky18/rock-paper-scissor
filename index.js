@@ -21,6 +21,7 @@ btn.addEventListener("click",()=>{
     if(mychoice==ComChoice){
         alert("IT IS A DRAW")
         btn.innerHTML="IT IS A DRAW"
+        document.querySelector(".selected").classList.remove("selected")
     }else{
         if((mychoice=="paper" && ComChoice=="rock")||(mychoice=="rock" && ComChoice=="scissor")||(mychoice=="scissor" && ComChoice=="paper")){
             mScore+=1
@@ -33,8 +34,8 @@ btn.addEventListener("click",()=>{
             btn.innerHTML="YOU LOST ,BETTER LUCK NEXT TIME !"
             alert(`You Lost .Computer chosen ${ComChoice}`)
         }
+        document.querySelector(".selected").classList.remove("selected")
     }
-    document.querySelector(".selected").classList.remove("selected")
 
 })
 function imgClicked() {
